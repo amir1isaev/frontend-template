@@ -7,17 +7,20 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"lint": "eslint --fix \"src/**/*.{ts,tsx,js,jsx}\"",
-		"build:start": "yarn build && serve -s dist"
+		"lint": "eslint --fix \"src/**/*.{ts,tsx,js,jsx}\""
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.3",
 		"clsx": "^1.2.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.8.2"
+		"react-redux": "^8.0.5",
+		"react-router-dom": "^6.8.2",
+		"redux": "^4.2.1"
 	},
 	"devDependencies": {
 		"@feature-sliced/eslint-config": "^0.1.0-beta.6",
+		"@types/node": "^18.15.0",
 		"@types/react": "^18.0.27",
 		"@types/react-dom": "^18.0.10",
 		"@typescript-eslint/eslint-plugin": "^5.54.1",

@@ -1,15 +1,15 @@
-import { FC } from 'react';
-import { useRoutes } from 'react-router-dom';
-import { HomePage } from 'pages/home';
-import { browserPaths } from 'shared/config';
+import { FC } from 'react'
+import { useRoutes } from 'react-router-dom'
+import { TodoPage } from 'pages/todo'
+import { browserPaths } from 'shared/config'
 
 export const Pages: FC = () => {
 	const routes = useRoutes([
 		{
 			path: browserPaths.ROOT,
-			element: <HomePage />,
+			element: <TodoPage />,
 		},
-	]);
+	])
 
-	return routes;
-};
+	return routes
+}
